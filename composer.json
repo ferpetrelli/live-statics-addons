@@ -1,0 +1,43 @@
+{
+    "name": "petrelli/live-statics-addons",
+    "description": "Addons to extend petrelli/live-statics with new functionalities",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+      "statics",
+      "injection",
+      "data",
+      "controller",
+      "services",
+      "mock"
+    ],
+    "authors": [
+        {
+            "name": "Fernando Petrelli",
+            "email": "contact@fernandopetrelli.com"
+        }
+    ],
+    "require": {
+      "php": "^7.1",
+      "petrelli/live-statics": "0.0.2-alpha",
+      "laravel/framework": "~5.6.13|~5.7.0"
+    },
+    "require-dev": {
+      "mockery/mockery": "^1.0",
+      "orchestra/testbench": "~3.6.6",
+      "phpunit/phpunit": "~7.5.6|~8.0.4"
+    },
+    "autoload": {
+      "psr-4": {
+        "Petrelli\\LiveStaticsAddons\\": "src/"
+      }
+    },
+    "extra": {
+      "laravel": {
+          "providers": [
+              "Petrelli\\LiveStaticsAddons\\BaseServiceProvider"
+          ]
+      }
+    },
+    "minimum-stability": "stable"
+}
