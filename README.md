@@ -18,7 +18,7 @@ composer require petrelli/live-statics-addons
 Or directly add it to your composer.json
 
 ```json
-"petrelli/live-statics-addons": "^0.0.1"
+"petrelli/live-statics-addons": "^0.0.1@alpha"
 ```
 
 And run `composer update`.
