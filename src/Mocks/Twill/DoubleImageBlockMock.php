@@ -30,7 +30,7 @@ class DoubleImageBlockMock extends BaseBlockMock implements DoubleImageBlockInte
         $this->random   = rand(1,1000);
         $mock->title    = app('faker')->sentence();
         $mock->alt_text = app('faker')->sentence();
-        $mock->caption  = app('faker')->sentence();
+        $mock->caption  = app('faker')->dynamic('Block: Image/Video Caption')->sentence();
 
     }
 
@@ -38,8 +38,8 @@ class DoubleImageBlockMock extends BaseBlockMock implements DoubleImageBlockInte
     public static function define(&$mock)
     {
 
-        $mock->caption  = app('faker')->sentence();
-        $mock->caption2 = app('faker')->sentence();
+        $mock->caption  = app('faker')->dynamic('Block: Image/Video Caption')->sentence();
+        $mock->caption2 = app('faker')->dynamic('Block: Image/Video Caption')->sentence();
 
         return $mock;
 

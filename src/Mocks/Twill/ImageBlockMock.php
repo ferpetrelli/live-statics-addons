@@ -33,7 +33,7 @@ class ImageBlockMock extends BaseBlockMock implements ImageBlockInterface
         $this->random   = rand(1,1000);
         $mock->title    = app('faker')->sentence();
         $mock->alt_text = app('faker')->sentence();
-        $mock->caption  = app('faker')->sentence();
+        $mock->caption  = app('faker')->dynamic('Block: Image/Video Caption')->sentence();
 
     }
 
@@ -51,7 +51,7 @@ class ImageBlockMock extends BaseBlockMock implements ImageBlockInterface
     public static function define(&$mock)
     {
 
-        $mock->caption = app('faker')->sentence();
+        $mock->caption = app('faker')->dynamic('Block: Image/Video Caption')->sentence();
 
         return $mock;
 

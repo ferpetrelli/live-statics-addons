@@ -18,7 +18,7 @@ class SubtitleBlockMock extends BaseBlockMock implements SubtitleBlockInterface
     public static function define(&$mock)
     {
 
-        $mock->title = app('faker')->sentence(rand(3, 6));
+        $mock->title = app('faker')->dynamic('Block: Subtitle')->sentence(rand(3, 6));
 
         return $mock;
 

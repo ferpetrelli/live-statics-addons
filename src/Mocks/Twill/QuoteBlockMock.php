@@ -18,7 +18,7 @@ class QuoteBlockMock extends BaseBlockMock implements QuoteBlockInterface
     public static function define(&$mock)
     {
 
-        $mock->quote = app('faker')->sentence(20, 50);
+        $mock->quote = app('faker')->dynamic('Block: Quote')->sentence(20, 50);
 
         return $mock;
 

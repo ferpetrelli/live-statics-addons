@@ -20,7 +20,7 @@ class VideoBlockMock extends BaseBlockMock implements VideoBlockInterface
     {
 
         $mock->url = 'https://www.youtube.com/watch?v=XrDUTpeGW0A';
-        $mock->caption = app('faker')->sentence();
+        $mock->caption = app('faker')->dynamic('Block: Image/Video Caption')->sentence();
 
         return $mock;
 

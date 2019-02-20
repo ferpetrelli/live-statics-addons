@@ -18,7 +18,7 @@ class TitleBlockMock extends BaseBlockMock implements TitleBlockInterface
     public static function define(&$mock)
     {
 
-        $mock->title = app('faker')->sentence(rand(3, 6));
+        $mock->title = app('faker')->dynamic('Block: Title')->sentence(rand(3, 6));
 
         return $mock;
 

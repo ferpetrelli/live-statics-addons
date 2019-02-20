@@ -19,7 +19,7 @@ class ParagraphBlockMock extends BaseBlockMock implements ParagraphBlockInterfac
     {
 
         $mock->id = rand(1,1000);
-        $mock->paragraph = '<p> ' . app('faker')->sentence(rand(10, 100)) . '</p>';
+        $mock->paragraph = '<p> ' . app('faker')->dynamic('Block: Paragraph')->sentence(rand(10, 100)) . '</p>';
 
         return $mock;
 

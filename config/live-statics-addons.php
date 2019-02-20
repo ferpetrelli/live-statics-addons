@@ -57,7 +57,7 @@ return [
     | Interface mapper
     |--------------------------------------------------------------------------
     |
-    | This is just a shortcut for when you want to instantiate helpers.
+    | This is just a shortcut for when you want to instantiate interfaces.
     | A Facade is provided for this task:
     |
     | \InterfaceMapper::resolve('twill.carousel')
