@@ -46,7 +46,7 @@ class BookMock extends BaseMock implements BookInterface
 }
 ```
 
-## Only Traits
+## Traits
 
 
 Let's include the `HasImages` to emulate images from `Twill` as an example.
@@ -63,6 +63,14 @@ class BookMock extends BaseMock implements BookInterface
     #...
 }
 ```
+
+# TODO
+
+Documentation:
+
+* Interface Mapper
+* Twill Blocks
+* Twill Images
 
 
 # License
