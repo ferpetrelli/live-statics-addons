@@ -146,4 +146,17 @@ trait HasImages
     }
 
 
+    /**
+     *
+     * Return an image low quality placeholder
+     *
+     */
+    public function lowQualityImagePlaceholder($role, $crop = 'default')
+    {
+
+        return 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
+
+    }
+
+
 }
